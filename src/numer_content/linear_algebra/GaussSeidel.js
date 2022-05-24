@@ -22,7 +22,7 @@ const _GaussSeidel = (matrix,vector,epsilon) =>{
         for(let i=0;i<x.length;i++){
             if(i != n) res -= (matrix[n][i] * x[i])
         }
-        return res/(A[n][n])
+        return res/(matrix[n][n])
     }
 
     let count = 1
@@ -63,10 +63,11 @@ const _GaussSeidel = (matrix,vector,epsilon) =>{
     return data
 }
 
-const GaussSeidel = (props) =>{
+const GaussSeidel = (props) =>(
     <div>
         <MatrixInput function={(matrix,vector) => _GaussSeidel(matrix,vector,props.error)} />
     </div>
-}
+)
+    
 
 export default GaussSeidel

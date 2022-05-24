@@ -1,3 +1,5 @@
+import React from "react"
+import MatrixInput from "./MatrixInput"
 const { abs } =  require("mathjs")
 
 const forwardEliminate = (matrix) =>{
@@ -58,7 +60,7 @@ const backSubstitute = (matrix) =>{
 
         res[i] = matrix[i][N]
         console.log(" --> ",res)
-        for(j=(i+1);j<N;j++){
+        for(let j=(i+1);j<N;j++){
             res[i] -= (matrix[i][j] * res[j])
         }
 

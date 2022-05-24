@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { sqrt, subtract, multiply, matrix, transpose, divide, subset, index} from "mathjs"
+import { sqrt, subtract, multiply, matrix, transpose, divide, subset, index, add} from "mathjs"
 import MatrixInput from "./MatrixInput"
 
 const Conjugate_Gradient_Method = (_matrix,vector,EPSILON) =>{
@@ -32,21 +32,22 @@ const Conjugate_Gradient_Method = (_matrix,vector,EPSILON) =>{
     let R = Residual()
     let D = multiply(-1,R)
     let iteration = 1
+    let error
 
     while(true){
 
         //console.log("iteration :",iteration)
-        x = math.add(x,multiply(LAMBDA(),D))
+        x = add(x,multiply(LAMBDA(),D))
         //console.log("x =",math.format(x))
 
         R = Residual()
         //console.log("Residual =",math.format(R))
         
-        error = math.sqrt(multiply(transpose(R),R)).subset(index(0,0))
+        error = sqrt(multiply(transpose(R),R)).subset(index(0,0))
         //console.log("error =",error)
         if(error > EPSILON){
             
-            D = math.add(multiply(-1,R) ,multiply(ALPHA(),D))
+            D = add(multiply(-1,R) ,multiply(ALPHA(),D))
             //console.log("Distance =",math.format(D))
             iteration++
         }

@@ -24,7 +24,7 @@ const _Jacobi = (matrix,vector,error) =>{
         for(let i=0;i<vector.length;i++){
             if(i != n) res -= (matrix[n][i] * x[i])
         }
-        return res/(A[n][n])
+        return res/(matrix[n][n])
     }
 
     while(true){
@@ -46,19 +46,17 @@ const _Jacobi = (matrix,vector,error) =>{
         count++
     }
 
-    x.map(
-        xx =>{
-            data.Answer.push(
-                <div>
-                    <p>{(String.fromCharCode((eq.charCodeAt(0)+i))) + " = " + xx}</p>
-                </div>
-            )
-        }
-    )
+    for(let i=0;i<x.length;i++){
+        data.Answer.push(
+            <div>
+                <p>{(String.fromCharCode((eq.charCodeAt(0)+i))) + " = " + x[i]}</p>
+            </div>
+        )
+    }
 
     data.Answer.push(
         <div>
-            <p>{"iteration = " + count}</p>
+            <p>{"iterations = " + count}</p>
         </div>
     )
 

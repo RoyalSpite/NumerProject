@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { pow,sqrt } from "mathjs";
+import MatrixInput from "./MatrixInput";
 
 const backward_substitution = (L,vector) =>{
 
@@ -34,7 +35,7 @@ const Cholesky_decomposition = (matrix,vector) =>{
         x => Array(size).fill(0)
     )
 
-    for (let i=0;i<n;i++) {
+    for (let i=0;i<size;i++) {
         for (let j=0;j<=i;j++) {
             let sum = 0
 
@@ -73,6 +74,7 @@ const Cholesky_decomposition = (matrix,vector) =>{
 
     //forward substitution
     const X = Array(size).fill(0)
+    
     for(let i=(size-1);i>=0;i--){
 
         let sum = 0
