@@ -124,7 +124,7 @@ const GaussJordan_ = (matrix,vector) =>{
 
 }
 
-const GaussJordan = (
+const GaussJordan = () => (
     <div>
         <MatrixInput function={(matrix,vector)=>GaussJordan_(matrix,vector)} />
     </div> 
