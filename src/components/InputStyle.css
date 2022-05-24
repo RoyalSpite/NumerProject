@@ -1,0 +1,62 @@
+.InputFormula{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    font-size: 30px;
+    justify-content: center;
+}
+.sss{
+    width: 100%;
+} 
+  
+table{
+
+    width: 100%;
+}
+
+td{
+    padding: 20px 10px;
+}
+
+.CalculateButton{
+    font-size: 20px;
+    padding: 6px;
+    background-color: yellow;
+    color: black;
+    border: 1px solid black;
+}
+
+.InputMatrix{
+
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+        
+}
+
+.pointinput{
+    border-radius: 5px;
+    background-color: rgb(0,0,0,.125);
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    resize: none;
+}
+
+.pointinput:focus{
+    border: none;
+}
+
+.inputblock{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0px;
+}
+
+.margin-item{
+    gap: 30px;
+}
+
+.addbottompadding{
+    padding-bottom: 10px;
+}

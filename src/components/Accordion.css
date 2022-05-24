@@ -1,0 +1,13 @@
+.AccordionPanel{
+    padding: 5px 5px 5px 5px;
+    background-color: black;
+    width: 270px;
+    height: 100%;
+}
+
+.menuitem{
+    width: 100%;
+    text-align: left;
+    background-color: black;
+    color: cyan;
+}

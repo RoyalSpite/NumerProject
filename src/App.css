@@ -1,9 +1,71 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
 .App {
+  display: inline-block;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.AccordionPanel{
+  padding: 10px 5px 5px 5px;
+  background-color: black;
+  width: 270px;
+  height: 100%;
+}
+
+.Header{
+  padding: 5px;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  background-color: black;
+}
+
+.openDrawerButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+}
+
+.Header h1{
+  width: 100%;
   text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+.contentPanel{
+  width: 100%;
+  background-color: transparent;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.content{
+
+  width: 80%;
+  padding: 20px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.contentBox{
+  border: solid 1.5px grey;
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 0px 10px;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 50vmin;
   pointer-events: none;
 }
 
@@ -11,21 +73,6 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
