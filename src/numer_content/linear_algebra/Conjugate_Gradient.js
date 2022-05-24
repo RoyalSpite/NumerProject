@@ -2,25 +2,30 @@ import React, { useState } from "react"
 import { sqrt, subtract, multiply, matrix, transpose, divide, subset, index} from "mathjs"
 import MatrixInput from "./MatrixInput"
 
-const Conjugate_Gradient_Method = (matrix,vector,EPSILON) =>{
+const Conjugate_Gradient_Method = (_matrix,vector,EPSILON) =>{
     
-    if(matrix == null) return
+    if(_matrix == null) return
+    const eq = (vector.length > 3)? "w":"x"
+    const data = {
+        Answer: [],
+        math: [],
+    }
 
-    let x = math.matrix([
+    let x = matrix([
         [0],[0],[0],[0]
     ,])
 
-    const Residual = () => (subtract(multiply(matrix,x),vector))
+    const Residual = () => (subtract(multiply(_matrix,x),vector))
 
     const LAMBDA = () => {
-        const upper = multiply(math.transpose(D),R)
-        const lower = multiply(multiply(transpose(D),matrix),D)
+        const upper = multiply(transpose(D),R)
+        const lower = multiply(multiply(transpose(D),_matrix),D)
         return (multiply(-1,divide(upper,lower))).subset(index(0,0))
     }
 
     const ALPHA = () => {
-        const upper = multiply(multiply(transpose(R),matrix) ,D)
-        const lower = multiply(multiply(transpose(D),matrix) ,D)
+        const upper = multiply(multiply(transpose(R),_matrix) ,D)
+        const lower = multiply(multiply(transpose(D),_matrix) ,D)
         return (divide(upper,lower)).subset(index(0,0))
     }
 
@@ -46,8 +51,26 @@ const Conjugate_Gradient_Method = (matrix,vector,EPSILON) =>{
             iteration++
         }
         else break
-
     }
+
+    let count = 0
+
+    x.forEach((value, index, matrix) => {
+        data.Answer.push(
+            <div>
+                <p><p>{(String.fromCharCode((eq.charCodeAt(0)+count))) + " = " + x}</p></p>
+            </div>
+        )
+        count++
+    }) 
+
+    data.Answer.push(
+        <div>
+            <p>{"iterations = " + iteration}</p>
+        </div>
+    )
+
+    return data
 }
 
 const Conjugate_Gradient = (props) =>(    

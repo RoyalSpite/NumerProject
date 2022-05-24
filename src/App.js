@@ -7,6 +7,7 @@ import Cramers from './numer_content/linear_algebra/Cramers_Rule';
 import GaussianElimination from './numer_content/linear_algebra/Gaussian';
 import GaussJordan from './numer_content/linear_algebra/GaussJordan';
 import LU from './numer_content/linear_algebra/LU_Decomposition';
+import Cholesky from './numer_content/linear_algebra/Cholesky_Decomposition';
 import Jacobi from './numer_content/linear_algebra/Jacobi';
 import GaussSeidel from './numer_content/linear_algebra/GaussSeidel';
 import Conjugate_Gradient from './numer_content/linear_algebra/Conjugate_Gradient';
@@ -67,6 +68,8 @@ function App(){
             return <GaussJordan />
         case "LU Decomposition":
             return <LU />
+        case "Cholesky Decomposition":
+            return <Cholesky />
         case "Jacobi":
             return <Jacobi error={EPSILON} />
         case "Guass-Seidel":

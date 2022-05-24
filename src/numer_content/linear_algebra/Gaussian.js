@@ -111,16 +111,14 @@ const Gaussian = (matrix,vector) =>{
 
     let ans = backSubstitute(M)
 
-    ans.map(
-        a =>{
-            data.Answer.push(
-                <div>
-                    <p>{(String.fromCharCode((eq.charCodeAt(0)+i))) + " = " + a}</p>
-                </div>
-            ) 
-        }
-    )
-
+    for(let i=0;i<ans;i++){
+        data.Answer.push(
+            <div>
+                <p>{(String.fromCharCode((eq.charCodeAt(0)+i))) + " = " + ans[i]}</p>
+            </div>
+        ) 
+    }
+    
     return data
 
 }

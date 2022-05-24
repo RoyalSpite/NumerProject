@@ -19,7 +19,13 @@ const Cholesky_decomposition = (matrix,vector) =>{
 
     if(matrix == null) return
 
+    const data = {
+        Answer: [],
+        math: [],
+    }
+
     const size = matrix.length
+    const eq = (size.length > 3)? "w":"x"
     const L = Array(size).fill(0).map(
         x => Array(size).fill(0)
     )
@@ -78,8 +84,15 @@ const Cholesky_decomposition = (matrix,vector) =>{
 
     }
 
-    console.log('X = ',X)
+    for(let i=0;i<X.length;i++){
+        data.Answer.push(
+            <div>
+                <p>{(String.fromCharCode((eq.charCodeAt(0)+i))) + " = " + X[i]}</p>
+            </div>
+        )
+    }
 
+    return data
 }
 
 const Cholesky = () =>(

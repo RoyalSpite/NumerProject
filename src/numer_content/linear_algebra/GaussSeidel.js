@@ -6,9 +6,15 @@ const _GaussSeidel = (matrix,vector,epsilon) =>{
     
     if(matrix == null) return
 
+    const data = {
+        Answer: [],
+        math: [],
+    }
+
     let x = new Array(vector.length).fill(0)
     let x_temp = new Array(vector.length).fill(0)
     let error_check = new Array(vector.length).fill(0)
+    const eq = (vector.length > 3)? "w":"x"
 
     const _funct = (n) =>{
 
@@ -40,19 +46,17 @@ const _GaussSeidel = (matrix,vector,epsilon) =>{
         count++
     }
 
-    x.map(
-        xx =>{
-            data.Answer.push(
-                <div>
-                    <p>{(String.fromCharCode((eq.charCodeAt(0)+i))) + " = " + xx}</p>
-                </div>
-            )
-        }
-    )
+    for(let i=0;i<x.length;i++){
+        data.Answer.push(
+            <div>
+                <p>{(String.fromCharCode((eq.charCodeAt(0)+i))) + " = " + x[i]}</p>
+            </div>
+        )
+    }
 
     data.Answer.push(
         <div>
-            <p>{"iteration = " + count}</p>
+            <p>{"iterations = " + count}</p>
         </div>
     )
 
