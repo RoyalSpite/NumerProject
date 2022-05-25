@@ -21,7 +21,7 @@ const TypeZero = (props) =>{
                 id={_label}
                 autoComplete='off'
                 required
-                error={(state != 'OK' && state != null)? true:false}
+                error={(state !== 'OK' && state != null)? true:false}
                 variant="outlined"
                 label={"ระบุตำแหน่งขอบ".concat(_label==='value1'? "ซ้าย":"ขวา")}
                 onChange={() => setHelperText(null)}
@@ -101,7 +101,7 @@ const TypeZero = (props) =>{
 
         let Ans
 
-        if(props.error != undefined){
+        if(props.error !== undefined){
             //for Root finding
             Ans = props.function(Eq,Xl,Xr,props.error)
         }

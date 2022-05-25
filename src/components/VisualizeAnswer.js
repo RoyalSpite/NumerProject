@@ -3,7 +3,7 @@ import GraphVisualizer from "./GraphVisualize"
 import Popup from "./Popup"
 import { Button } from "@mui/material"
 import '../components/InputStyle.css'
-import Changer from "./Changer"
+// import Changer from "./Changer"
 import GraphChanger from "../numer_content/root_of_equations/GraphChanger"
 
 const VisualizeAnswer = (props) =>{

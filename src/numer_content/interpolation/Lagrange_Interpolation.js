@@ -10,7 +10,7 @@ const lagrange = (interpol_x,arrX,arrY) =>{
         let divider = 1
         let divided = 1
         for(let j=0;j<size;j++){
-            if(arrX[j] != arrX[i]){
+            if(arrX[j] !== arrX[i]){
                 divider *= (arrX[j] - interpol_x)
                 divided *= (arrX[j] - arrX[i] )
             }

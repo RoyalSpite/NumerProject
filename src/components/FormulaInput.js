@@ -6,7 +6,7 @@ const FormulaInput = (props) => (
         id="EQ"
         autoComplete='off'
         required
-        error={(props.state != 'OK' && props.state != null)? true:false}
+        error={(props.state !== 'OK' && props.state != null)? true:false}
         variant="outlined"
         label={'กรุณากรอกสมการ'}
         onChange={() => props.setHelperText(null)}

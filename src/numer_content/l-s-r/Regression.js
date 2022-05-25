@@ -28,7 +28,7 @@ export const Regression = (ArrX,ArrY,deg,input_x) =>{
     for(let i=0;i<=deg;i++){
         X.push([])
         for(let j=i;j<=(deg+i);j++){
-            if(j==0) X[i].push(ArrX.length)
+            if(j===0) X[i].push(ArrX.length)
             else X[i].push(sumX(ArrX,j))
         }
     }

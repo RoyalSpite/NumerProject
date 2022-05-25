@@ -10,7 +10,7 @@ import LU from './numer_content/linear_algebra/LU_Decomposition';
 import Cholesky from './numer_content/linear_algebra/Cholesky_Decomposition';
 import Jacobi from './numer_content/linear_algebra/Jacobi';
 import GaussSeidel from './numer_content/linear_algebra/GaussSeidel';
-import Conjugate_Gradient from './numer_content/linear_algebra/Conjugate_Gradient';
+import ConjugateGradient from './numer_content/linear_algebra/Conjugate_Gradient';
 import Newtoninterpol from './numer_content/interpolation/Newton_Interpolation';
 import { Drawer } from '@mui/material'
 import { AiOutlineMenu } from 'react-icons/ai'
@@ -18,9 +18,9 @@ import AppAccordion from './components/AppAccordion'
 import LagrangeInterpol from './numer_content/interpolation/Lagrange_Interpolation';
 import SplineInterpol from './numer_content/interpolation/Spline';
 import LSR from './numer_content/l-s-r/Least_Square_Regression';
-import Simpsons_Integrate from './numer_content/integration/Simpson_OneThird_Integration';
-import Trapezoidal_Integrate from './numer_content/integration/Trapezoidal_Integration';
-import Numerical_Diff from './numer_content/diff/diff';
+import SimpsonsIntegrate from './numer_content/integration/Simpson_OneThird_Integration';
+import TrapezoidalIntegrate from './numer_content/integration/Trapezoidal_Integration';
+import NumericalDiff from './numer_content/diff/diff';
 
 function App(){
 
@@ -75,7 +75,7 @@ function App(){
         case "Guass-Seidel":
             return <GaussSeidel error={EPSILON} />
         case "Conjugate Gradient":
-            return <Conjugate_Gradient error={EPSILON} />
+            return <ConjugateGradient error={EPSILON} />
         case "Newton Interpolation":
             return <Newtoninterpol />
         case "Lagrange Interpolation":
@@ -85,11 +85,11 @@ function App(){
         case "Least Square Regression":
             return <LSR />
         case "Differentation":
-            return <Numerical_Diff />
+            return <NumericalDiff />
         case "Trapezoidal Rule":
-            return <Trapezoidal_Integrate />
+            return <TrapezoidalIntegrate />
         case "Simpson Rule":
-            return <Simpsons_Integrate />
+            return <SimpsonsIntegrate />
         default:
           return null
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { funct, true_error,drawEquationLine } from '../../components/CalculateFunctions'
+import { funct,drawEquationLine } from '../../components/CalculateFunctions'
 import Interval_setter from '../../components/Interval_selecter'
 import TypeZero from "../../components/TypeZeroInput"
 
@@ -117,7 +117,7 @@ const trapezoidal = (equation,a,b,n) =>{
     return data
 }
 
-const Trapezoidal_Integrate = () =>{
+const TrapezoidalIntegrate = () =>{
 
     const [ interval, setInterval ] = useState(1)
 
@@ -135,4 +135,4 @@ const Trapezoidal_Integrate = () =>{
     )
 }
 
-export default Trapezoidal_Integrate
+export default TrapezoidalIntegrate

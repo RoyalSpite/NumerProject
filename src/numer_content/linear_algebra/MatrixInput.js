@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {FormControl,InputLabel,MenuItem,Select,TextField,Table,TableRow,TableCell,Button} from "@mui/material"
+import {FormControl,InputLabel,MenuItem,Select,TextField,Table,TableRow,TableCell} from "@mui/material"
 import VisualizeAnswer from '../../components/VisualizeAnswer'
 import './MatrixStyle.css'
 import CalculateButton from '../../components/CalculateButton'
@@ -31,7 +31,7 @@ const MatrixInput = (props) =>{
 
         matrix = Array(size).fill(Array(size).fill(0))
 
-        const variable = (size == 4)? "w":"x"
+        const variable = (size === 4)? "w":"x"
 
         return(
             <table>
@@ -76,8 +76,8 @@ const MatrixInput = (props) =>{
     const handleSubmit = event => {
         event.preventDefault();
 
-        const variable = (size == 4)? "w":"x"
-        let count = 0;
+        const variable = (size === 4)? "w":"x"
+
         matrix = []
 
         for(let i=0;i<size;i++){
@@ -101,7 +101,7 @@ const MatrixInput = (props) =>{
         
         setAnswer(data.Answer)
 
-        //setMath(data.math)
+        setMath(data.math)
         
         //setAnswerMatrix(matrix);
     }

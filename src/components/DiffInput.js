@@ -30,8 +30,8 @@ const DiffInput = (props) =>{
     }
 
     const input = (label) => {
-        const _label = (label=="interval")? "กำหนดขนาดช่วง":"กำหนดจุดเริ่มต้น" 
-        const _id = (label=="interval")? "interval":"initial"
+        const _label = (label === "interval")? "กำหนดขนาดช่วง":"กำหนดจุดเริ่มต้น" 
+        const _id = (label === "interval")? "interval":"initial"
         return(
             <TextField
                 id={_id}

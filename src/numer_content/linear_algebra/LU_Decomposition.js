@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import MatrixInput from "./MatrixInput"
 
 const backward_substitution = (L,vector) =>{
@@ -17,7 +17,7 @@ const backward_substitution = (L,vector) =>{
 
 const LU_decomposition = (matrix,vector) =>{
 
-    if(matrix == null) return
+    if(matrix === null) return
 
     const eq = (vector.length > 3)? "w":"x"
 

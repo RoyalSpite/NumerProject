@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { true_error,funct } from '../../components/CalculateFunctions'
 import { Select, MenuItem, FormControl,InputLabel,Checkbox,FormControlLabel } from '@mui/material'
 import DiffInput from '../../components/DiffInput'
-const { compile,derivative, pow, abs, or } = require('mathjs')
+const { compile,derivative, pow, abs } = require('mathjs')
 
 const normal_coeff = [
     [1,1],
@@ -103,7 +103,7 @@ const Diff = {
 
 }
 
-const Numerical_Diff = () =>{
+const NumericalDiff = () =>{
 
     const [ order, setOrder ] = useState(1)
     const [ method, setMethod ] = useState(0)
@@ -158,7 +158,7 @@ const Numerical_Diff = () =>{
     )
     
     const conditional_diff = (equation,x_init,interval) =>{
-        const extreme_check = (mode==true)? 'extreme':'normal'
+        const extreme_check = (mode===true)? 'extreme':'normal'
         return Diff[extreme_check][method](equation,x_init,interval,order)
     }
 
@@ -185,4 +185,4 @@ const Numerical_Diff = () =>{
 
 }
 
-export default Numerical_Diff
+export default NumericalDiff

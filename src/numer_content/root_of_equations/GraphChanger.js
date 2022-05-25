@@ -112,13 +112,13 @@ const GraphChanger = (props) =>{
             width:'100%',
             height: '100%',
         }}>
-            <Button squared onClick={() => {if(index != 0) setIndex(index - 1)}}>   
+            <Button squared onClick={() => {if(index !== 0) setIndex(index - 1)}}>   
                 <AiOutlineDoubleLeft/>
             </Button>
 
             <GraphVisualizer plotData={setPlotData(index,Data.plotData)}/>
             
-            <Button squared onClick={() =>{if(index != (Data.iteration-1)) setIndex(index + 1)}}>
+            <Button squared onClick={() =>{if(index !== (Data.iteration-1)) setIndex(index + 1)}}>
                 <AiOutlineDoubleRight/>
             </Button>
         </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { sqrt, subtract, multiply, matrix, transpose, divide, subset, index, add} from "mathjs"
 import MatrixInput from "./MatrixInput"
 
@@ -74,10 +74,10 @@ const Conjugate_Gradient_Method = (_matrix,vector,EPSILON) =>{
     return data
 }
 
-const Conjugate_Gradient = (props) =>(    
+const ConjugateGradient = (props) =>(    
     <div>
         <MatrixInput function={(matrix,vector) => Conjugate_Gradient_Method(matrix,vector,props.error)} />
     </div>
 )
 
-export default Conjugate_Gradient
+export default ConjugateGradient

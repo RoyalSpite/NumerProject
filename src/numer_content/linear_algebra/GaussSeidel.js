@@ -20,7 +20,7 @@ const _GaussSeidel = (matrix,vector,epsilon) =>{
 
         let res = vector[n]
         for(let i=0;i<x.length;i++){
-            if(i != n) res -= (matrix[n][i] * x[i])
+            if(i !== n) res -= (matrix[n][i] * x[i])
         }
         return res/(matrix[n][n])
     }

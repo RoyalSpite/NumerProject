@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { pow,sqrt } from "mathjs";
 import MatrixInput from "./MatrixInput";
 
@@ -39,7 +39,7 @@ const Cholesky_decomposition = (matrix,vector) =>{
         for (let j=0;j<=i;j++) {
             let sum = 0
 
-            if (j == i) {
+            if (j === i) {
 
                 for(let k=0;k<j;k++) sum += (pow(L[j][k],2))
 

@@ -1,4 +1,4 @@
-import React,{ useState } from "react"
+import React from "react"
 import { matrix, det } from "mathjs";
 import { BlockMath } from 'react-katex';
 import { RenderKatexMatrix } from "./RenderKatexMatrix";
@@ -18,7 +18,7 @@ const Cramers_Rule = (Matrix,Vector) =>{
     let dividant = det(matrix(D))
     const eq = (D.length > 3)? "w":"x"
 
-    if(dividant == 0){
+    if(dividant === 0){
 
         data.Answer.push(
             <p style={{color:"red",padding:"10px"}}>

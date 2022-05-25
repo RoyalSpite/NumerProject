@@ -104,7 +104,7 @@ export const Quadratic_Spline = (interpolated_x,arrX,arrY)  =>{
         let Xstep = arrX[i]
         for(let k=0;k<=10;k++){
             plotX.push(Xstep)
-            if(i == 0){
+            if(i === 0){
                 plotY.push(subset(Answer, index(0))*Xstep + subset(Answer, index(1)))
             }
             else{

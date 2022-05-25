@@ -1,4 +1,4 @@
-import { compile,evaluate, abs } from "mathjs";
+import { abs } from "mathjs";
 
 export const funct = (eq,xv) => eq.evaluate({ x:xv })
 

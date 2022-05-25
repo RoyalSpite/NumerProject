@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Divider,TextField,Button, Dialog,DialogTitle,DialogContent } from "@mui/material"
+import { Divider,TextField } from "@mui/material"
 import '../../components/InputStyle.css'
 import CalculateButton from "../../components/CalculateButton";
 import VisualizeAnswer from "../../components/VisualizeAnswer";
@@ -22,7 +22,7 @@ const PointsInput = (props) =>{
                 multiline
                 size='small'
                 minRows={1}
-                error={(state != 'OK' && state != null)? true:false}
+                error={(state !== 'OK' && state != null)? true:false}
                 variant="outlined"
                 label={_label}
                 onChange={() => setHelperText(null)}
@@ -55,7 +55,7 @@ const PointsInput = (props) =>{
             setFxsState('กรุณากรอกข้อมูลให้ x และ y เท่ากัน')
         }
         else{
-            if(x.every(xx => typeof xx == 'number') == false){
+            if(x.every(xx => typeof xx === 'number') == false){
                 setXsState('กรุณากรอกข้อมูลตัวเลข')
             }
             else{ 
@@ -63,7 +63,7 @@ const PointsInput = (props) =>{
                 checkX = true
             }
 
-            if(y.every(yy => typeof yy == 'number') == false){
+            if(y.every(yy => typeof yy === 'number') == false){
                 setFxsState('กรุณากรอกข้อมูลตัวเลข')
             }
             else{ 
@@ -104,7 +104,7 @@ const PointsInput = (props) =>{
             <div className="inputblock">
                 <TextField
                     required
-                    error={interpol_xState != null && interpol_xState != 'OK'}
+                    error={interpol_xState !== null && interpol_xState != 'OK'}
                     id='interpolated_x'
                     style={{width:'300px',}} 
                     label="กำหนดจุด x ที่จะใช้ประมาณค่า" 
