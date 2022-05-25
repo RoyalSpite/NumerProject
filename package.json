@@ -17,6 +17,7 @@
     "mathjs": "^10.4.0",
     "mathjs-simple-integral": "^0.1.1",
     "mongoose": "^6.3.4",
+    "node-pre-gyp": "^0.17.0",
     "plotly.js": "^2.11.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
