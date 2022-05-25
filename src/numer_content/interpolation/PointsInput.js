@@ -50,7 +50,7 @@ const PointsInput = (props) =>{
             setXsState('กรุณากรอกข้อมูลไม่ต่ำกว่า 2 ค่า')
             setXsState('กรุณากรอกข้อมูลไม่ต่ำกว่า 2 ค่า')
         }
-        else if(x.length != y.length){
+        else if(x.length !== y.length){
             setXsState('กรุณากรอกข้อมูลให้ x และ y เท่ากัน')
             setFxsState('กรุณากรอกข้อมูลให้ x และ y เท่ากัน')
         }
