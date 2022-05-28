@@ -1,0 +1,188 @@
+[2022-05-28 14:52:38Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2022-05-28 14:52:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\USER\numerproject\action-runner\bin'
+[2022-05-28 14:52:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\USER\numerproject\action-runner'
+[2022-05-28 14:52:38Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\USER\numerproject\action-runner\.credentials'
+[2022-05-28 14:52:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\USER\numerproject\action-runner\bin'
+[2022-05-28 14:52:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\USER\numerproject\action-runner'
+[2022-05-28 14:52:38Z INFO HostContext] Well known config file 'Runner': 'C:\Users\USER\numerproject\action-runner\.runner'
+[2022-05-28 14:52:38Z INFO Listener] Runner is built for Windows (X64) - win-x64.
+[2022-05-28 14:52:38Z INFO Listener] RuntimeInformation: Microsoft Windows 10.0.19042.
+[2022-05-28 14:52:38Z INFO Listener] Version: 2.291.1
+[2022-05-28 14:52:38Z INFO Listener] Commit: 496ec0df97891bd8e50f4431d01874ac3ab75a93
+[2022-05-28 14:52:38Z INFO Listener] Culture: th-TH
+[2022-05-28 14:52:38Z INFO Listener] UI Culture: en-US
+[2022-05-28 14:52:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\USER\numerproject\action-runner\bin'
+[2022-05-28 14:52:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\USER\numerproject\action-runner'
+[2022-05-28 14:52:38Z INFO Listener] Validating directory permissions for: 'C:\Users\USER\numerproject\action-runner'
+[2022-05-28 14:52:38Z INFO CommandLineParser] Parse
+[2022-05-28 14:52:38Z INFO CommandLineParser] Parsing 5 args
+[2022-05-28 14:52:38Z INFO CommandLineParser] parsing argument
+[2022-05-28 14:52:38Z INFO CommandLineParser] HasArgs: False
+[2022-05-28 14:52:38Z INFO CommandLineParser] Adding Command: configure
+[2022-05-28 14:52:38Z INFO CommandLineParser] parsing argument
+[2022-05-28 14:52:38Z INFO CommandLineParser] HasArgs: True
+[2022-05-28 14:52:38Z INFO CommandLineParser] arg: url
+[2022-05-28 14:52:38Z INFO CommandLineParser] parsing argument
+[2022-05-28 14:52:38Z INFO CommandLineParser] HasArgs: True
+[2022-05-28 14:52:38Z INFO CommandLineParser] Adding option 'url': 'https://github.com/RoyalSpite/NumerProject'
+[2022-05-28 14:52:38Z INFO CommandLineParser] parsing argument
+[2022-05-28 14:52:38Z INFO CommandLineParser] HasArgs: True
+[2022-05-28 14:52:38Z INFO CommandLineParser] arg: token
+[2022-05-28 14:52:38Z INFO CommandLineParser] parsing argument
+[2022-05-28 14:52:38Z INFO CommandLineParser] HasArgs: True
+[2022-05-28 14:52:38Z INFO CommandLineParser] Adding option 'token': '***'
+[2022-05-28 14:52:38Z INFO Listener] Arguments parsed
+[2022-05-28 14:52:38Z INFO Runner] ExecuteCommand
+[2022-05-28 14:52:38Z INFO ConfigurationStore] currentAssemblyLocation: C:\Users\USER\numerproject\action-runner\bin\Runner.Listener.dll
+[2022-05-28 14:52:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\USER\numerproject\action-runner\bin'
+[2022-05-28 14:52:38Z INFO ConfigurationStore] binPath: C:\Users\USER\numerproject\action-runner\bin
+[2022-05-28 14:52:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\USER\numerproject\action-runner\bin'
+[2022-05-28 14:52:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\USER\numerproject\action-runner'
+[2022-05-28 14:52:38Z INFO ConfigurationStore] RootFolder: C:\Users\USER\numerproject\action-runner
+[2022-05-28 14:52:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\USER\numerproject\action-runner\bin'
+[2022-05-28 14:52:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\USER\numerproject\action-runner'
+[2022-05-28 14:52:38Z INFO HostContext] Well known config file 'Runner': 'C:\Users\USER\numerproject\action-runner\.runner'
+[2022-05-28 14:52:38Z INFO ConfigurationStore] ConfigFilePath: C:\Users\USER\numerproject\action-runner\.runner
+[2022-05-28 14:52:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\USER\numerproject\action-runner\bin'
+[2022-05-28 14:52:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\USER\numerproject\action-runner'
+[2022-05-28 14:52:38Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\USER\numerproject\action-runner\.credentials'
+[2022-05-28 14:52:38Z INFO ConfigurationStore] CredFilePath: C:\Users\USER\numerproject\action-runner\.credentials
+[2022-05-28 14:52:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\USER\numerproject\action-runner\bin'
+[2022-05-28 14:52:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\USER\numerproject\action-runner'
+[2022-05-28 14:52:38Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\Users\USER\numerproject\action-runner\.credentials_migrated'
+[2022-05-28 14:52:38Z INFO ConfigurationStore] MigratedCredFilePath: C:\Users\USER\numerproject\action-runner\.credentials_migrated
+[2022-05-28 14:52:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\USER\numerproject\action-runner\bin'
+[2022-05-28 14:52:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\USER\numerproject\action-runner'
+[2022-05-28 14:52:38Z INFO HostContext] Well known config file 'Service': 'C:\Users\USER\numerproject\action-runner\.service'
+[2022-05-28 14:52:38Z INFO ConfigurationStore] ServiceConfigFilePath: C:\Users\USER\numerproject\action-runner\.service
+[2022-05-28 14:52:38Z INFO CommandSettings] Flag 'help': 'False'
+[2022-05-28 14:52:38Z INFO CommandSettings] Flag 'version': 'False'
+[2022-05-28 14:52:38Z INFO CommandSettings] Flag 'commit': 'False'
+[2022-05-28 14:52:38Z INFO CommandSettings] Flag 'check': 'False'
+[2022-05-28 14:52:38Z INFO CommandSettings] Command 'configure': 'True'
+[2022-05-28 14:52:38Z INFO Terminal] WRITE LINE: 
+[2022-05-28 14:52:38Z INFO Terminal] WRITE LINE: --------------------------------------------------------------------------------
+[2022-05-28 14:52:38Z INFO Terminal] WRITE LINE: |        ____ _ _   _   _       _          _        _   _                      |
+[2022-05-28 14:52:38Z INFO Terminal] WRITE LINE: |       / ___(_) |_| | | |_   _| |__      / \   ___| |_(_) ___  _ __  ___      |
+[2022-05-28 14:52:38Z INFO Terminal] WRITE LINE: |      | |  _| | __| |_| | | | | '_ \    / _ \ / __| __| |/ _ \| '_ \/ __|     |
+[2022-05-28 14:52:38Z INFO Terminal] WRITE LINE: |      | |_| | | |_|  _  | |_| | |_) |  / ___ \ (__| |_| | (_) | | | \__ \     |
+[2022-05-28 14:52:38Z INFO Terminal] WRITE LINE: |       \____|_|\__|_| |_|\__,_|_.__/  /_/   \_\___|\__|_|\___/|_| |_|___/     |
+[2022-05-28 14:52:38Z INFO Terminal] WRITE LINE: |                                                                              |
+[2022-05-28 14:52:38Z INFO Terminal] WRITE: |                       
+[2022-05-28 14:52:38Z INFO Terminal] WRITE: Self-hosted runner registration
+[2022-05-28 14:52:38Z INFO Terminal] WRITE LINE:                         |
+[2022-05-28 14:52:38Z INFO Terminal] WRITE LINE: |                                                                              |
+[2022-05-28 14:52:38Z INFO Terminal] WRITE LINE: --------------------------------------------------------------------------------
+[2022-05-28 14:52:38Z INFO ConfigurationManager] ConfigureAsync
+[2022-05-28 14:52:38Z INFO ConfigurationStore] IsConfigured()
+[2022-05-28 14:52:38Z INFO ConfigurationStore] IsConfigured: False
+[2022-05-28 14:52:38Z INFO ConfigurationManager] Is configured: False
+[2022-05-28 14:52:38Z INFO CommandSettings] Arg 'url': 'https://github.com/RoyalSpite/NumerProject'
+[2022-05-28 14:52:38Z INFO CommandSettings] Remove url from Arg dictionary.
+[2022-05-28 14:52:38Z INFO CommandSettings] Arg 'token': '***'
+[2022-05-28 14:52:38Z INFO CommandSettings] Remove token from Arg dictionary.
+[2022-05-28 14:52:39Z INFO ConfigurationManager] Http response code: OK from 'POST https://api.github.com/actions/runner-registration'
+[2022-05-28 14:52:39Z INFO ConfigurationManager] cred retrieved via GitHub auth
+[2022-05-28 14:52:39Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2022-05-28 14:52:39Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-05-28 14:52:39Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2022-05-28 14:52:39Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-05-28 14:52:39Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2022-05-28 14:52:39Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-05-28 14:52:40Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-05-28 14:52:41Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-05-28 14:52:41Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-05-28 14:52:41Z INFO Terminal] WRITE LINE: 
+[2022-05-28 14:52:41Z INFO ConfigurationManager] Test Connection complete.
+[2022-05-28 14:52:41Z INFO HostContext] Well known directory 'Bin': 'C:\Users\USER\numerproject\action-runner\bin'
+[2022-05-28 14:52:41Z INFO HostContext] Well known directory 'Root': 'C:\Users\USER\numerproject\action-runner'
+[2022-05-28 14:52:41Z INFO HostContext] Well known config file 'RSACredentials': 'C:\Users\USER\numerproject\action-runner\.credentials_rsaparams'
+[2022-05-28 14:52:41Z INFO RSAEncryptedFileKeyManager] Found existing RSA key parameters file C:\Users\USER\numerproject\action-runner\.credentials_rsaparams
+[2022-05-28 14:52:41Z INFO CommandSettings] Arg 'runnergroup': ''
+[2022-05-28 14:52:41Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-05-28 14:52:41Z INFO PromptManager] ReadValue
+[2022-05-28 14:52:41Z INFO Terminal] WRITE: Enter the name of the runner group to add this runner to: 
+[2022-05-28 14:52:41Z INFO Terminal] WRITE: [press Enter for Default] 
+[2022-05-28 14:52:41Z INFO Terminal] READ LINE
+[2022-05-28 14:52:42Z INFO Terminal] Read value: ''
+[2022-05-28 14:52:42Z INFO PromptManager] Falling back to the default: 'Default'
+[2022-05-28 14:52:42Z INFO Terminal] WRITE LINE: 
+[2022-05-28 14:52:42Z INFO ConfigurationManager] Found a self-hosted runner group with id 1 and name Default
+[2022-05-28 14:52:42Z INFO CommandSettings] Flag 'disableupdate': 'False'
+[2022-05-28 14:52:42Z INFO CommandSettings] Flag 'ephemeral': 'False'
+[2022-05-28 14:52:42Z INFO CommandSettings] Arg 'name': ''
+[2022-05-28 14:52:42Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-05-28 14:52:42Z INFO PromptManager] ReadValue
+[2022-05-28 14:52:42Z INFO Terminal] WRITE: Enter the name of runner: 
+[2022-05-28 14:52:42Z INFO Terminal] WRITE: [press Enter for COMPUTER21H2] 
+[2022-05-28 14:52:42Z INFO Terminal] READ LINE
+[2022-05-28 14:52:54Z INFO Terminal] Read value: 'react-numer-app'
+[2022-05-28 14:52:54Z INFO Terminal] WRITE LINE: 
+[2022-05-28 14:52:54Z INFO CommandSettings] Arg 'labels': ''
+[2022-05-28 14:52:54Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-05-28 14:52:54Z INFO PromptManager] ReadValue
+[2022-05-28 14:52:54Z INFO Terminal] WRITE: This runner will have the following labels: 'self-hosted', 'Windows', 'X64' 
+Enter any additional labels (ex. label-1,label-2): 
+[2022-05-28 14:52:54Z INFO Terminal] WRITE: [press Enter to skip] 
+[2022-05-28 14:52:54Z INFO Terminal] READ LINE
+[2022-05-28 14:52:57Z INFO Terminal] Read value: ''
+[2022-05-28 14:52:57Z INFO Terminal] WRITE LINE: 
+[2022-05-28 14:52:57Z INFO CommandSettings] Flag 'disableupdate': 'False'
+[2022-05-28 14:52:58Z INFO CommandSettings] Flag 'disableupdate': 'False'
+[2022-05-28 14:52:58Z INFO CommandSettings] Flag 'ephemeral': 'False'
+[2022-05-28 14:52:58Z INFO ConfigurationStore] Saving OAuth credential @ C:\Users\USER\numerproject\action-runner\.credentials
+[2022-05-28 14:52:58Z INFO ConfigurationStore] Credentials Saved.
+[2022-05-28 14:52:58Z INFO ConfigurationStore] HasCredentials()
+[2022-05-28 14:52:58Z INFO ConfigurationStore] stored True
+[2022-05-28 14:52:58Z INFO CredentialManager] GetCredentialProvider
+[2022-05-28 14:52:58Z INFO CredentialManager] Creating type OAuth
+[2022-05-28 14:52:58Z INFO CredentialManager] Creating credential type: OAuth
+[2022-05-28 14:52:58Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\USER\numerproject\action-runner\.credentials_rsaparams
+[2022-05-28 14:52:58Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2022-05-28 14:52:58Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-05-28 14:52:58Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2022-05-28 14:52:58Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-05-28 14:52:58Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2022-05-28 14:52:58Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-05-28 14:52:59Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-05-28 14:52:59Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-05-28 14:52:59Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-05-28 14:52:59Z WARN GitHubActionsService] Authentication failed with status code 401.
+Transfer-Encoding: chunked
+WWW-Authenticate: Bearer
+Strict-Transport-Security: max-age=2592000
+X-TFS-ProcessId: 28d652bb-e145-4a3e-afb2-ca258296acfd
+ActivityId: a196391e-90b3-49e5-8fdb-78aaaaa43fb9
+X-TFS-Session: c6769217-ea44-4890-994c-2bc39d3a9516
+X-VSS-E2EID: 7a6ad5ab-acde-4b4a-8af0-abd2afdbfa5b
+X-VSS-SenderDeploymentId: 9d51f527-7c54-71ef-5aa4-7c3dc660eb8a
+X-TFS-ServiceError: The+user+%27System%3aPublicAccess%3baaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27+is+not+authorized+to+access+this+resource.
+X-VSS-S2STargetService: 0000005A-0000-8888-8000-000000000000/visualstudio.com
+X-Cache: CONFIG_NOCACHE
+X-MSEdge-Ref: Ref A: BC884A75DDCF46BBBF94D51CABDFA9DE Ref B: BKK30EDGE0517 Ref C: 2022-05-28T14:53:00Z
+Date: Sat, 28 May 2022 14:52:59 GMT
+
+[2022-05-28 14:53:00Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\USER\numerproject\action-runner\.credentials_rsaparams
+[2022-05-28 14:53:00Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\USER\numerproject\action-runner\.credentials_rsaparams
+[2022-05-28 14:53:00Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2022-05-28 14:53:01Z INFO CommandSettings] Arg 'work': ''
+[2022-05-28 14:53:01Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-05-28 14:53:01Z INFO PromptManager] ReadValue
+[2022-05-28 14:53:01Z INFO Terminal] WRITE: Enter name of work folder: 
+[2022-05-28 14:53:01Z INFO Terminal] WRITE: [press Enter for _work] 
+[2022-05-28 14:53:01Z INFO Terminal] READ LINE
+[2022-05-28 14:53:09Z INFO Terminal] Read value: ''
+[2022-05-28 14:53:09Z INFO PromptManager] Falling back to the default: '_work'
+[2022-05-28 14:53:09Z INFO ConfigurationStore] Saving runner settings.
+[2022-05-28 14:53:09Z INFO ConfigurationStore] Settings Saved.
+[2022-05-28 14:53:09Z INFO Terminal] WRITE LINE: 
+[2022-05-28 14:53:09Z INFO Terminal] WRITE LINE: 
+[2022-05-28 14:53:09Z INFO CommandSettings] Flag 'runasservice': 'False'
+[2022-05-28 14:53:09Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-05-28 14:53:09Z INFO PromptManager] ReadValue
+[2022-05-28 14:53:09Z INFO Terminal] WRITE: Would you like to run the runner as service? (Y/N) 
+[2022-05-28 14:53:09Z INFO Terminal] WRITE: [press Enter for N] 
+[2022-05-28 14:53:09Z INFO Terminal] READ LINE
+[2022-05-28 14:53:13Z INFO Terminal] Read value: ''
+[2022-05-28 14:53:13Z INFO PromptManager] Falling back to the default: 'N'
+[2022-05-28 14:53:13Z INFO Listener] Runner execution has finished with return code 0

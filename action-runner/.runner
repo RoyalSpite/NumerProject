@@ -1,0 +1,9 @@
+﻿{
+  "agentId": 21,
+  "agentName": "react-numer-app",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelines.actions.githubusercontent.com/6S6lSb8JwlCOWQIW6T39B4QXKcOA4Ep91lO7NDG5NElri3SmiB",
+  "gitHubUrl": "https://github.com/RoyalSpite/NumerProject",
+  "workFolder": "_work"
+}
