@@ -11,9 +11,7 @@ const Conjugate_Gradient_Method = (_matrix,vector,EPSILON) =>{
         math: [],
     }
 
-    let x = matrix([
-        [0],[0],[0],[0]
-    ,])
+    let x = matrix(new Array(vector.length).fill([0]))
 
     const Residual = () => (subtract(multiply(_matrix,x),vector))
 
@@ -59,7 +57,7 @@ const Conjugate_Gradient_Method = (_matrix,vector,EPSILON) =>{
     x.forEach((value, index, matrix) => {
         data.Answer.push(
             <div>
-                <p><p>{(String.fromCharCode((eq.charCodeAt(0)+count))) + " = " + x}</p></p>
+                <p><p>{(String.fromCharCode((eq.charCodeAt(0)+count))) + " = " + value}</p></p>
             </div>
         )
         count++
